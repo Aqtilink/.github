@@ -1,5 +1,10 @@
 # Aqtilink
 
+## What this app does
+- Social activity feed with join/create flows; three Spring Boot services (user, activity, notification) plus a React/Vite frontend.
+- Postgres for data, RabbitMQ for async notifications, Clerk for auth/JWTs.
+
+
 ## Run locally (docker-compose)
 1) Prereqs: Docker + Docker Compose.
 2) Clone all microservices to a directory
