@@ -3,8 +3,8 @@
 ## Run locally (docker-compose)
 1) Prereqs: Docker + Docker Compose.
 2) Clone all microservices to a directory
-3) Env needs JWK_SET_URI=<your clerk frontend api url>
-             SERVICE_API_KEY=<your clerk secret key>
+3) Env needs JWK_SET_URI=<"your clerk frontend api url">
+             SERVICE_API_KEY=<"your clerk secret key">
 4) Start: docker compose up --build
 5) Apps:
    - Frontend: http://localhost:5173
