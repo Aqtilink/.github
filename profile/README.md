@@ -7,6 +7,10 @@ Aqtilink is a social activity platform where users can discover, create, and joi
 - Social activity feed with join/create flows; three Spring Boot services (user, activity, notification) plus a React/Vite frontend.
 - Postgres for data, RabbitMQ for async notifications, Clerk for auth/JWTs.
 
+## Branching
+- All microservices have main and dev branches, for now in development when there are no active users we just use main branch
+- When app will be actually in production we will use dev for development and main as production branch.
+- Right now whe have set up GitHub actions for automatic compiling and pushing dockerimages on both branches.
 
 ## Run locally (docker-compose)
 1) Prereqs: Docker + Docker Compose.
