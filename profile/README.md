@@ -1,6 +1,9 @@
 # Aqtilink
 
-## What this app does
+## App overview
+Aqtilink is a social activity platform where users can discover, create, and join local activities. Connect with others in your community through a modern, real-time activity feed.
+
+## Tech overview
 - Social activity feed with join/create flows; three Spring Boot services (user, activity, notification) plus a React/Vite frontend.
 - Postgres for data, RabbitMQ for async notifications, Clerk for auth/JWTs.
 
