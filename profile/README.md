@@ -5,7 +5,7 @@ Aqtilink is a social activity platform where users can discover, create, and joi
 
 ## Tech overview
 - Social activity feed with join/create flows; three Spring Boot services (user, activity, notification) plus a React/Vite frontend.
-- Postgres for data, RabbitMQ for async notifications, Clerk for auth/JWTs.
+- Postgres for data, RabbitMQ for async notifications, Clerk for auth/JWTs, SendGrid for sending emails.
 
 ## Branching
 - All microservices have main and dev branches, for now in development when there are no active users we just use main branch
@@ -15,8 +15,10 @@ Aqtilink is a social activity platform where users can discover, create, and joi
 ## Run locally (docker-compose)
 1) Prereqs: Docker + Docker Compose.
 2) Clone all microservices to a directory
-3) Env needs JWK_SET_URI=<"your clerk frontend api url">
-             SERVICE_API_KEY=<"your clerk secret key">
+3) Env needs - JWK_SET_URI=<"your clerk frontend api url">
+             - SERVICE_API_KEY=<"your clerk key">
+             - CLERK_SECRET_KEY=<"your clerk secret key">
+             - SENDGRID-API-KEY=<"your sendgrid api key">
 4) Start: docker compose up --build
 5) Apps:
    - Frontend: http://localhost:5173
